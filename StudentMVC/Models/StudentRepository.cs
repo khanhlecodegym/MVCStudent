@@ -16,14 +16,17 @@ namespace StudentMVC.Models
 
         public IEnumerable<Student> GetAll
         {
-            get { 
-              return dbContext.Students.Include(g => g.Group);
+            get {
+                //return dbContext.Students.OrderByDescending(s => s.StudentId).Take(3).Include(g => g.Group);
+                return dbContext.Students.Include(g => g.Group);
             }
         }
 
+        public IEnumerable<Student> StudentRankPlatinum => dbContext.Students.Include(g => g.Group).Where(s => s.IsPlatinum);
+
         public Student GetById(int id)
         {
-            return dbContext.Students.FirstOrDefault(s => s.StudentId == id);
+            return dbContext.Students.Include(g => g.Group).FirstOrDefault(s => s.StudentId == id);
         }
     }
 }

@@ -12,6 +12,7 @@ namespace StudentMVC.Models
         public string UrlImage { get; set; }
         public string History { get; set; }
         public  bool Sex { get; set; }
+        public bool IsPlatinum { get; set; }
 
         public int GroupId { get; set; }
         public Group Group { get; set; }

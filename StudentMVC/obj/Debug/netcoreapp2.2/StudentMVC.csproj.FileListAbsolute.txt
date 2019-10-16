@@ -14,7 +14,6 @@ E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\StudentMVC.TagHelper
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\StudentMVC.TagHelpers.output.cache
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\StudentMVC.RazorCoreGenerate.cache
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
-E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -29,3 +28,8 @@ E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\StudentMVC.pdb
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\StudentMVC.csproj.CopyComplete
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\StudentMVC.csprojAssemblyReference.cache
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Student\List.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Student\Details.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_StudentCard.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Carousel.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\GroupMenu\Default.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Mail\Index.g.cshtml.cs

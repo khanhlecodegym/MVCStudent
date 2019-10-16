@@ -7,6 +7,8 @@ namespace StudentMVC.Models
     public interface IStudentRepository
     {
         IEnumerable<Student> GetAll { get; }
+        IEnumerable<Student> StudentRankPlatinum { get; }
+
         Student GetById(int id);
     }
 }

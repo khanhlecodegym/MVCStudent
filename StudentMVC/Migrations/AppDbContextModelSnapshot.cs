@@ -69,6 +69,8 @@ namespace StudentMVC.Migrations
 
                     b.Property<string>("History");
 
+                    b.Property<bool>("IsPlatinum");
+
                     b.Property<string>("Name");
 
                     b.Property<bool>("Sex");

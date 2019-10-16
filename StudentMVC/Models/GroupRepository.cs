@@ -5,9 +5,13 @@ namespace StudentMVC.Models
 {
     public class GroupRepository : IGroupRepository
     {
-        public IEnumerable<Group> GetAll()
+        private readonly AppDbContext appDbContext;
+
+        public GroupRepository(AppDbContext appDbContext)
         {
-            throw new NotImplementedException();
+            this.appDbContext = appDbContext;
         }
+
+        public IEnumerable<Group> GetAll => appDbContext.Groups;
     }
 }

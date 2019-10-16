@@ -5,25 +5,28 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using StudentMVC.Models;
+using StudentMVC.ViewModels;
 
 namespace StudentMVC.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IStudentRepository studentRepository;
+
+        public HomeController(IStudentRepository studentRepository)
+        {
+            this.studentRepository = studentRepository;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var homeViewModel = new HomeViewModel
+            {
+                StudentRankPlatinum = studentRepository.StudentRankPlatinum
+            };
+
+            return View(homeViewModel);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

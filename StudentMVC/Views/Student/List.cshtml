@@ -1,21 +1,18 @@
-﻿@model StudentMVC.ViewModels.StudentsListViewModel
+﻿@model StudentsListViewModel
 
 
 @{
     ViewData["Title"] = "List";
 }
 
-<h1>@Model.CurrentGroup</h1>
-
-@foreach (var student in Model.Students)
-{
-    <lable>Lop</lable>
-    <h3>@student.Group.GroupName</h3>
-    <lable>Name</lable>
-    <h2>@student.Name</h2>
-    <lable>History</lable>
-    <h3>@student.History</h3>
-
-    <img class="imgStudent" src="@student.UrlImage" alt="" />
-    <hr />
-}
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-5 text-center">@Model.CurrentGroup</h2>
+            <div class="card-deck">
+                @foreach (var student in Model.Students)
+                {                  
+                    <partial name="_StudentCard" model="student" />
+                  }
+                </div>
+            </div>
+</section>

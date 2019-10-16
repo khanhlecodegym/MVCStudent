@@ -1,0 +1,20 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<div class="thumbnail">
+    <img id="imgDetail" alt="@Model.Name" src="@Model.UrlImage">
+    <div class="caption-full">
+        <h3 class="pull-right">@Model.Sex</h3>
+        <h3>
+            <a href="#">@Model.Name</a>
+        </h3>
+        <h4>@Model.Group.GroupName</h4>
+        <p>@Model.History</p>
+    </div>
+</div>
+
