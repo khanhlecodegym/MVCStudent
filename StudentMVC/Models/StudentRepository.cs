@@ -24,6 +24,16 @@ namespace StudentMVC.Models
 
         public IEnumerable<Student> StudentRankPlatinum => dbContext.Students.Include(g => g.Group).Where(s => s.IsPlatinum);
 
+        public void Add(Student student)
+        {
+            dbContext.Add(student);
+        }
+
+        public void Commit()
+        {
+            dbContext.SaveChanges();
+        }
+
         public Student GetById(int id)
         {
             return dbContext.Students.Include(g => g.Group).FirstOrDefault(s => s.StudentId == id);

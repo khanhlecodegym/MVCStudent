@@ -8,7 +8,8 @@ namespace StudentMVC.Models
     {
         IEnumerable<Student> GetAll { get; }
         IEnumerable<Student> StudentRankPlatinum { get; }
-
+        void Add(Student student);
+        void Commit();
         Student GetById(int id);
     }
 }

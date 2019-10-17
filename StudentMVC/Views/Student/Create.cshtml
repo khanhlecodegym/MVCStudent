@@ -1,0 +1,35 @@
+﻿@model StudentViewModel
+ 
+@{
+    ViewData["Title"] = "ShowCreate";
+}
+
+<h1>ShowCreate</h1>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Student.Name" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Student.Name" class="form-control" />
+            <span asp-validation-for="Student.Name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Student.UrlImage" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Student.UrlImage" class="form-control" />
+
+        </div>
+    </div><div class="form-group">
+        <label asp-for="Student.Sex" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            Male:   @Html.RadioButton("Student.Sex", true)
+            Female: @Html.RadioButton("Student.Sex", false)
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Student.GroupId"></label>
+        <select asp-for="Student.GroupId" asp-items="Model.Groups">
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

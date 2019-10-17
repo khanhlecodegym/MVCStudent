@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using StudentMVC.Models;
 using StudentMVC.ViewModels;
 
@@ -27,7 +29,7 @@ namespace StudentMVC.Controllers
 
         //    return View(studentsListViewModel);
         //}
-
+        [Authorize]
         public IActionResult List(string GroupName)
         {
             IEnumerable<Student> students;
@@ -61,6 +63,28 @@ namespace StudentMVC.Controllers
             }
 
             return View(student);
+        }
+
+        //[Authorize]
+        public IActionResult Create()
+        {
+            var studentViewModel = new StudentViewModel();
+            studentViewModel.Groups = new SelectList(groupRepository.GetAll, "GroupId", "GroupName");
+            return View(studentViewModel);
+        }
+
+        //[Authorize]
+        [HttpPost]
+        public IActionResult Create(Student student)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                studentRepository.Add(student);
+                studentRepository.Commit();
+                return RedirectToAction("List");
+            }
+            return View();
         }
     }
 }

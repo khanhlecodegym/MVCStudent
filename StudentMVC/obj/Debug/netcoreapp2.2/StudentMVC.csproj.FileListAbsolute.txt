@@ -33,3 +33,12 @@ E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Carousel.g.cshtml.cs
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\GroupMenu\Default.g.cshtml.cs
 E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Mail\Index.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Student\Create.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+E:\ProjectNET\StudentMVC\StudentMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
